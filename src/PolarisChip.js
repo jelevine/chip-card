@@ -15,6 +15,10 @@ export class PolarisChip extends LitElement {
   constructor() {
     super();
     this.title = 'University reminds employees of flu, COVID-19 vaccines, resources and policies';
+    this.date = "2021-10-10";
+    this.image = "https://hr.psu.edu/sites/hr/files/styles/article_home_page/public/2023-10/FluVaccines_HRFeature.jpg?h=09bc788e&itok=KEMIew2T";
+    this.description = "Updated information for University employees, as it relates to flu and COVID-19 vaccine resources, health plan coverage and absence policies.";
+    this.web = "https://hr.psu.edu/news/university-reminds-employees-flu-covid-19-vaccines-resources-and-policies";
   }
 
 
@@ -34,14 +38,13 @@ export class PolarisChip extends LitElement {
     max-width: 423px;
     justify-content: center;
   
-
-   
     }
 
     .card-container {
     background-color: white;
-    height: 564px;
-    width: 423px;
+    max-height: 564px;
+    max-width: 423px;
+  
     
   }
 
@@ -216,8 +219,6 @@ export class PolarisChip extends LitElement {
     text-size-adjust: 100%;
   }
 
-
-
     `;
   }
 
@@ -234,30 +235,23 @@ export class PolarisChip extends LitElement {
     <div class="card-content">
 
       <div class="bHover">
-        <a href="https://hr.psu.edu/news/university-reminds-employees-flu-covid-19-vaccines-resources-and-policies">
-          <img src="https://hr.psu.edu/sites/hr/files/styles/article_home_page/public/2023-10/FluVaccines_HRFeature.jpg?h=09bc788e&itok=KEMIew2T" class = "img"></a>
+        <a href=${this.web}>
+          <img src=${this.image} class = "img"></a>
       </div>
 
       <div class="article-top">
     
         
         <div class="post-date">
-        <date-chip date="2021-10-10"></date-chip>
-          <!--
-          <span class="month">Oct</span>
-          <span class="day">10</span>        
-  -->
+        <date-chip date=${this.date}></date-chip>
         </div>
 
         <h3>
-          <a href="https://hr.psu.edu/news/university-reminds-employees-flu-covid-19-vaccines-resources-and-policies" class="classTitle">University reminds employees of flu, COVID-19 vaccines, resources and policies</a>
+          <a href=${this.web} class="classTitle">${this.title}</a>
         </h3>
-      
-        <span property="schema:name" content="University reminds employees of flu, COVID-19 vaccines, resources and policies" class="rdf-meta hidden"></span>
-
         <div class="fieldBody">
             <div property="textP">
-              <p id="text">Updated information for University employees, as it relates to flu and COVID-19 vaccine resources, health plan coverage and absence policies. </p>
+              <p id="text">${this.description}</p>
         </div>
       
    </div>
