@@ -219,6 +219,11 @@ export class PolarisChip extends LitElement {
     text-size-adjust: 100%;
   }
 
+  @media (max-width: 800px){
+    .cards{
+      width: 100%;
+    }
+  }
     `;
   }
 
