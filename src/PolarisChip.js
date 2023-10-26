@@ -31,6 +31,7 @@ export class PolarisChip extends LitElement {
 
     :host{
         display: inline-block;
+        justify-content: center;
         
         
     }
@@ -65,6 +66,7 @@ export class PolarisChip extends LitElement {
   .cards img{
     max-width:100%;
     max-height: 100%;
+    height: 150%;
     display: block;  //This was the key to remove the thin margin at the bottom
   
   }

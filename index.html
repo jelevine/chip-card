@@ -9,22 +9,21 @@
   
   <style>
     html,
-    body {
+    .wrapper {
       padding: 0;
       font-family: sans-serif;
       background-color: white;
       justify-content: center;
-      align-items: center;
       display: flex;
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-      
+
     }
 
     @media (max-width: 700px){
-      body{
-        display: inline;
+      .wrapper{
+        display: block;
         width: 100%;
 
       }
@@ -36,9 +35,15 @@
 
 
 <body>
-  <polaris-chip></polaris-chip>
-  <polaris-chip></polaris-chip>
-  <polaris-chip></polaris-chip>
+  <div class = 'wrapper'>
+    <polaris-chip title = "Expanded Family Sick Leave For Full-Time Staff To Take Effect In January" image = "https://hr.psu.edu/sites/hr/files/styles/article_home_page/public/2023-10/ExpandedFamilySick_0.jpg?h=5265ff56&itok=e9egM1X8 "
+    description = "As part of a continuing commitment to help improve quality of life for Penn State employees and their families, Penn State Human Resources is expanding the University’s family sick leave policy to 80 hours per year."
+    date = "10-19-2023" web = "https://hr.psu.edu/news/expanded-family-sick-leave-full-time-staff-take-effect-january"></polaris-chip>
+    <polaris-chip></polaris-chip>
+    <polaris-chip title = "2024 Benefits Open Enrollment Information Now Available" image = "https://hr.psu.edu/sites/hr/files/styles/article_home_page/public/2023-09/BOEInformation_HRFeature.jpg?h=09bc788e&itok=ZDBRn6_B"
+    description = "Penn State's 2024 Benefits Open Enrollment starts, Monday, Nov. 6, and runs through 5 p.m. EST on Friday, Nov. 17. Information on health-care plan designs — which remain the same for 2024 — is available on a dedicated 2024 Benefits Open Enrollment section of the Penn State Human Resources website."
+    date = "9-25-2023" web = "https://hr.psu.edu/news/2024-benefits-open-enrollment-information-now-available"></polaris-chip>
+  </div>
 
   
   <script type="module" src="./src/polaris-chip.js"></script>
