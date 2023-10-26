@@ -7,6 +7,10 @@ export class PolarisChip extends LitElement {
   static get properties() {
     return {
       title: { type: String },
+      date: { type: String },
+      description: { type: String },
+      web: { type: String },
+      image: { type: String }
     };
   }
 
@@ -219,10 +223,22 @@ export class PolarisChip extends LitElement {
     text-size-adjust: 100%;
   }
 
-  @media (max-width: 800px){
-    .cards{
-      width: 100%;
+  @media (max-width: 700px){
+    .cards {
+    margin-top: 0;
+    margin-left: 0;
+    max-height: 564px;
+    max-width: 700px;
+  
     }
+
+    .card-container {
+    background-color: white;
+    max-height: 564px;
+    max-width: 700px;
+  
+    
+  }
   }
     `;
   }
