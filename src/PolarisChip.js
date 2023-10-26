@@ -38,7 +38,8 @@ export class PolarisChip extends LitElement {
 
     .cards {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     max-height: 564px;
     max-width: 423px;
     justify-content: center;
@@ -181,15 +182,15 @@ export class PolarisChip extends LitElement {
     box-sizing: border-box;
     color: #000000;
     display: block;
-    font-family: 'roboto', sans-serif;
-    line-height: 24px;
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.4em;
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
     text-rendering: optimizeSpeed;
     text-size-adjust: 100%;
-    margin-top: auto;
+    margin-top: 10px;
 
   
   }
@@ -198,8 +199,8 @@ export class PolarisChip extends LitElement {
     box-sizing: border-box;
     color: #000000;
     display: block;
-    font-family: 'roboto', sans-serif;
-    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4em;
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 5px;
@@ -213,8 +214,9 @@ export class PolarisChip extends LitElement {
     color: #000;
     display: block;
     font-family: 'Roboto',sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 1.5;
+    font-weight: 100;
     margin-block: 0px 28.8px;
     padding: 0px 0px 28.8px;
     text-rendering: optimizespeed;
@@ -231,19 +233,19 @@ export class PolarisChip extends LitElement {
 
 
 
-  @media (max-width: 700px){
+  @media (max-width: 766px){
     .cards {
     margin-top: 0;
     margin-left: 0;
     max-height: 564px;
-    max-width: 700px;
+    max-width: 766px;
   
     }
 
     .card-container {
     background-color: white;
     max-height: 564px;
-    max-width: 700px;
+    max-width: 766px;
   
     
   }
