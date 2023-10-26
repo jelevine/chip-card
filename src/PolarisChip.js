@@ -91,7 +91,7 @@ export class PolarisChip extends LitElement {
     font-family: 'roboto', sans-serif;
     text-rendering: optimizeSpeed;
     text-transform: capitalize;
-    display: inline;
+    display: flex;
     box-sizing: border-box;
     line-height: 1em;
     text-decoration-skip-ink: auto;
@@ -209,22 +209,16 @@ export class PolarisChip extends LitElement {
 
   #text {
     box-sizing: border-box;
-    color: #000000;
+    color: #000;
     display: block;
-    font-family: 'roboto', sans-serif;
-    font-size: 19.2px;
-    font-weight: 100;
-    line-height: 26.88px;
-    margin-block-end: 28.8px;
-    margin-block-start: 0;
-    padding-bottom: 28.8px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    text-rendering: optimizeSpeed;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-block: 0px 28.8px;
+    padding: 0px 0px 28.8px;
+    text-rendering: optimizespeed;
     text-size-adjust: 100%;
-  }
-
+}
   @media (max-width: 700px){
     .cards {
     margin-top: 0;
