@@ -31,7 +31,7 @@ export class PolarisChip extends LitElement {
 
     :host{
         display: inline-block;
-        justify-content: center;
+        vertical-align: top;
         
         
     }
@@ -66,7 +66,6 @@ export class PolarisChip extends LitElement {
   .cards img{
     max-width:100%;
     max-height: 100%;
-    height: 150%;
     display: block;  //This was the key to remove the thin margin at the bottom
   
   }
@@ -190,6 +189,8 @@ export class PolarisChip extends LitElement {
     padding-right: 5px;
     text-rendering: optimizeSpeed;
     text-size-adjust: 100%;
+    margin-top: auto;
+
   
   }
 
@@ -219,6 +220,17 @@ export class PolarisChip extends LitElement {
     text-rendering: optimizespeed;
     text-size-adjust: 100%;
 }
+
+  .overlay {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: none;
+  }
+
+
+
   @media (max-width: 700px){
     .cards {
     margin-top: 0;
@@ -250,15 +262,13 @@ export class PolarisChip extends LitElement {
 
   <div class="card-container">
     <div class="card-content">
-
       <div class="bHover">
         <a href=${this.web}>
-          <img src=${this.image} class = "img"></a>
+          <img src=${this.image} class = "img">
+        </a>
       </div>
-
+    <div class = 'overlay'>
       <div class="article-top">
-    
-        
         <div class="post-date">
         <date-chip date=${this.date}></date-chip>
         </div>
@@ -266,12 +276,13 @@ export class PolarisChip extends LitElement {
         <h3>
           <a href=${this.web} class="classTitle">${this.title}</a>
         </h3>
-        <div class="fieldBody">
-            <div property="textP">
-              <p id="text">${this.description}</p>
-        </div>
-      
-   </div>
+      </div>
+    </div>
+    <div class="fieldBody">
+      <div property="textP">
+        <p id="text">${this.description}</p>
+      </div>
+    </div>
 
       </div>
     </div>
